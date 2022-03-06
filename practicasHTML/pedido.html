@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+</head>
+<center>
+<body>
+    <style>
+        body{
+            font: 1em sans-serif;
+            background-color:bisque;
+            padding-bottom: 50px;
+        }
+    </style>
+    <img src="/img/logo.png" width="100px" alt="pasteleria">
+    <h1>Realiza tu pedido</h1>
+    <form action="pedido.js">
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="Nombre" placeholder="Nombre"><br><br>
+        <label for="Nombre">Ingresa tu correo electronico: </label>
+        <input type="email" name="email" placeholder="correo electronico"><br><br>
+        <label for="tel">Teléfono: </label>
+        <input type="tel" id="tel" name="tel" placeholder="telefono" maxlength="10"><br><br>
+        <label for="cantidad">Cuantos Pasteles necesitas: </label>
+        <input type="number" id="cantidad" name="cantidad">
+        <h2>Puedes combinar Sabores</h2>
+        <br>
+        <label><input type="checkbox" name="sabor1" id="sabor1" value="vainilla">Vainilla</label>
+        <label><input type="checkbox" name="sabor2" id="sabor2" value="chocolate">Chocolate</label>
+        <label><input type="checkbox" name="sabor3" id="sabor3" value="limon">Limón</label>
+        <label><input type="checkbox" name="sabor4" id="sabor4" value="zanahoria">Zanahoria</label>
+        <label><input type="checkbox" name="sabor5" id="sabor5" value="naranja">Naranja</label>
+        <label><input type="checkbox" name="sabor6" id="sabor6" value="fresa">Fresa</label>
+        <br><br>
+        <h2>Elige los adornos que llevara tu pastel</h2><br>
+        <label><input type="checkbox" name="adorno1" id="adorno1" value="Flores">Flores</label>
+        <label><input type="checkbox" name="adorno2" id="adorno2" value="Letras">Chispas de chocolate</label>
+        <label><input type="checkbox" name="adorno3" id="adorno3" value="">Crema pastelera</label>
+        <label><input type="checkbox" name="adorno4" id="adorno4" value="zanahoria">Figuras</label>
+        <br><br>
+        <h2>Direccion</h2>
+        <label for="calle">Ingresa la direccion de entrega: </label>
+        <input type="text" placeholder="Calle y numero" id="calle" name="calle"><br><br>
+        <label for="colonia">Colonia: </label>
+        <input type="text" placeholder="Colonia" id="colonia" name="colonia"><br><br>
+        <label for="cp">Codigo Postal: </label>
+        <input type="number" placeholder="Codigo Postal" id="cp" name="cp"><br><br>
+        <input type="reset">
+        <input type="button" id="boton" name="boton" value="Enviar pedido" onclick="alert('Se registro su pedido');">
+    </form>
+<br><br>
+    <a href="/pasteleria.html">
+        <input type="button" value="Volver al inicio">
+    </a>
+</body></center>
+</html>
